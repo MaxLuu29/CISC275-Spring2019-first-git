@@ -2,6 +2,29 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+class Animal {
+	String name;
+	int numLegs;
+
+	public int getLegs() {
+		return numLegs;
+	}
+
+	public String toString() {
+		return name + numLegs;
+	}
+
+	public Animal(String name, int legs) {
+		this.name = name;
+		this.numLegs = legs;
+	}
+}
+class Dog extends Animal {
+
+	public Dog(String name, int legs) {
+		super(name,legs);
+	}
+}
 
 public class MyCompare3 {
 	
